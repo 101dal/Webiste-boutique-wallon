@@ -1,0 +1,30 @@
+.content {
+	padding-top:75px;
+	margin:10px;
+}
+
+#content {
+	background-color: #333;
+	padding:5px;
+	
+	height:100%; 	
+}
+
+.article {
+	text-align: justify;
+	padding:5px;
+}
+.article1 {
+	color:white;
+	display:inline-block;
+}
+.article2 {
+	margin:10px;
+	background-color: #003554;
+	color:white;
+	display:inline-block;
+}
+.article2 span {
+	font-size:20px;
+	font-weight:bold;
+}

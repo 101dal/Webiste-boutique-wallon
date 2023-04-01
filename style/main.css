@@ -1,0 +1,10 @@
+* {
+	margin:0;
+	font-family: Arial;
+}
+
+body {
+	background: linear-gradient(135deg,
+						rgba(249, 21, 125, .60)25%,
+						rgba(0, 255, 255, .60)75%);
+}
