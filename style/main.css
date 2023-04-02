@@ -4,7 +4,8 @@
 }
 
 body {
+	background: linear-gradient(160deg, #1c1c4f, #004c98);
 	background: linear-gradient(135deg,
-						rgba(249, 21, 125, .60)25%,
-						rgba(0, 255, 255, .60)75%);
+						rgba(249, 21, 123, 0.797)25%,
+						rgba(64, 0, 255, 0.6)75%);		
 }

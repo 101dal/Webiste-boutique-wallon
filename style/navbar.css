@@ -3,7 +3,7 @@
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #000000;
+	background-color: #333;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -12,7 +12,7 @@
 
 #navbar li {
 	float: left;
-	border-right: 1px solid #bbb;
+	border-radius: 25px;
 	height: 100%;
 	text-align: center;
 	transition: background-color 200ms;
@@ -39,14 +39,22 @@
 	cursor: pointer;
 }
 
-/* Change the link color to #111 (black) on hover */
-#navbar li:hover {
-	background-color: #363636;
+#navbar .panier {
+	background-color: #2596be;
 }
-#navbar li button::hover {
+#navbar .panier.active {
+	background-color: #282297;
+}
+
+/* Change the link color to #111 (black) on hover */
+#navbar li:hover:not(.active) {
+	background-color: #828282;
+}
+
+#navbar li button:hover {
 	cursor: pointer;
 }
 
 #navbar .active {
-  background-color: #04AA6D;
+	background-color: #04AA6D;
 }

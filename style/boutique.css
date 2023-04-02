@@ -1,19 +1,23 @@
-.teeshirt1{
-	width:31%;
+.content {
+	width: auto;
+}
+#article--content {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 20px;
+}
+
+.grid--1 {
+	grid-column: 1;
 	display:block;
 }
 
-.pull2{
-	width:31%;
+.grid--2 {
+	grid-column: 2;
 	display:block;
 }
 
-.bonnet3{
-	width:31%;
+.grid--3 {
+	grid-column: 3;
 	display:block;
-	float: right;
-}
-
-.article2 {
-	display:inline-block;
 }

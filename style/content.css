@@ -1,6 +1,7 @@
 .content {
 	padding-top:75px;
 	margin:10px;
+	transition: opacity 200ms;
 }
 
 #content {
