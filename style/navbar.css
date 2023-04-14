@@ -15,35 +15,90 @@
 	border-radius: 25px;
 	height: 100%;
 	text-align: center;
-	transition: background-color 200ms;
 }
 
 #navbar li:last-child {
   border-right: none;
 }
 
-#navbar li button {
-	border:none;
-	background:none!important;
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 14px 20px;
-	text-decoration: none;
-	position: relative;
-	top: 50%;
-	transform: translate(0, -50%);
-	height:100%;
-	width:100%;
-	font-size:30px;
-	cursor: pointer;
+#navbar li .button-19 {
+  appearance: button;
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+  height:100%;
+}
+#navbar li .button-19:after {
+  background-clip: padding-box;
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+#navbar li .button-19:main,
+#navbar li .button-19:focus {
+  user-select: auto;
+}
+#navbar li .button-19:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+#navbar li .button-19:disabled {
+  cursor: auto;
 }
 
-#navbar .panier {
-	background-color: #2596be;
+#navbar li .button-19.active, .button-19.active:after{
+	background-color: #287e10;
 }
-#navbar .panier.active {
-	background-color: #282297;
+
+#navbar li .button-19.active:after{
+	background-color: #3aba17;
+}
+
+#navbar li .button-19.panier{
+	background-color: #802000;
+}
+
+#navbar li .button-19.panier:after{
+	background-color: #f03c00;
+}
+
+#navbar li .button-19.panier.active{
+	background-color: #007a14;
+}
+#navbar li .button-19.panier.active:after{
+	background-color: #00b81f;
 }
 
 /* Change the link color to #111 (black) on hover */

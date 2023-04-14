@@ -16,12 +16,19 @@
 <body>
 	<div id="navbar">
 		<ul>
-			<li><video autoplay muted height="100%;"><source src="./image/logo.mp4" type="video/webm"></li>
-			<li class="active"><button onclick="redirect('pages/home.html', this);" href="index.html">Home</button></li>
-			<li><button href="boutique.html" onclick="redirect('pages/boutique.html', this);">Boutique</button></li>
-			<li><button href="contact.html" onclick="redirect('pages/contact.html', this);">Contact</button></li>
-			<li><button href="infos.html" onclick="redirect('pages/infos.html', this);">Infos</button></li>
-			<li class="panier"style="float:right"><button href="panier.html" onclick="redirect('pages/panier.html', this);">Panier</button></li>
+			<li><video autoplay muted height="100%;">
+					<source src="./image/logo.mp4" type="video/webm">
+			</li>
+			<li><button class="button-19 active" role="button" onclick="redirect('pages/home.html', this);"
+					href="index.html">Home</button></li>
+			<li><button class="button-19" role="button" href="boutique.html"
+					onclick="redirect('pages/boutique.html', this);">Boutique</button></li>
+			<li><button class="button-19" role="button" href="contact.html"
+					onclick="redirect('pages/contact.html', this);">Contact</button></li>
+			<li><button class="button-19" role="button" href="infos.html"
+					onclick="redirect('pages/infos.html', this);">Infos</button></li>
+			<li style="float:right"><button role="button" class="panier button-19" href="panier.html"
+					onclick="redirect('pages/panier.html', this);">Panier</button></li>
 		</ul>
 	</div>
 	<div class="content"></div>
