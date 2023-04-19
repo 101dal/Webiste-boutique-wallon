@@ -1,11 +1,10 @@
-function redirect(e, f) {
-	content = $('.content');
-	element = $(f)
-	content.css("opacity", "0");
-	//setTimeout(() => {
-	content.load(e);
-	content.css("opacity", "1");
-	//}, 200);
-	$('.active').removeClass('active');
-	element.addClass('active');
+function redirect(url, button) {
+	const content = $('.content');
+	const activeButton = $('.button-19.active');
+	activeButton.removeClass('active');
+	$(button).addClass('active');
+	content.css({ opacity: 0 }).load(url, () => {
+		content.css({ opacity: 1 });
+	});
+	console.log("this page is loaded")
 }

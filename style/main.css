@@ -1,6 +1,7 @@
 * {
 	margin:0;
 	font-family: Arial;
+	user-select:none;
 }
 
 body {

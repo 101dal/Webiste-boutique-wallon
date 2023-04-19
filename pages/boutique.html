@@ -1,5 +1,8 @@
 <link rel="stylesheet" href="style/boutique.css">
-<section id="content">
+<script src="./script/taille_selection.js"></script>
+<script src="./script/commande.js"></script>
+<script src="./script/boutique_loaded.js"></script>
+<section id="content" class="boutique-page">
 	<header class="article article1">
 		<h1>Ici, retrouvez tous les produits que nous vendons !</h1>
 	</header>
@@ -10,21 +13,56 @@
 			Elle peut aller jusqu'à 3
 			(me demander si vous voulez aller plus loin) 
 			Si vous voulez ajouter une colonne, juste recommencez (faites copier-coller chaque div pour avoir une idée de ce que ça fait)
+
+			IL EST IMPORTANT DE PRECISER DANS LE TAG PRODUIT LE NOM DU PRODUIT ET SON PRIX
 		-->
-		<div class="article2 grid--1">
-			<h2>Tee-Shirt</h2>
+		<div produit="Tee-Shirt" prix="10" class="article2 grid--1 produit" taille="M">
+			<h2></h2>
+			<br>
+			<img class="images" src="./image/tee-shirt.webp" alt="Tee-Shirt">
 			<p>Il y a plusieurs tailles :</p>
+			<br>
+			<div class="selector">
+				<button role="button" class="S selectbutton" value="S">S</button>
+				<button role="button" class="M selectbutton active" value="M">M</button>
+				<button role="button" class="L selectbutton" value="L">L</button>
+			</div>
+			<input type="number" id="nombre" name="nombre" min="0" max="99" value="1">
+			<button class="add_panier"">Ajouter au panier</button>
 		</div>
-
-		<div class="article2 grid--2">
-			<h2>Pull</h2>
-			<p>Il y a plusieurs tailles :</span></p>
+		
+		<div produit=" Pull" prix="25" class="article2 grid--2 produit" taille="M">
+				<h2></h2>
+				<br>
+				<img class="images" src="./image/pull.webp" alt="Tee-Shirt">
+				<p>Il y a plusieurs tailles :</p>
+				<br>
+				<div class="selector">
+					<button role="button" class="S selectbutton" value="S">S</button>
+					<button role="button" class="M selectbutton active" value="M">M</button>
+					<button role="button" class="L selectbutton" value="L">L</button>
+				</div>
+				<input type="number" id="nombre" name="nombre" min="0" max="99" value="1">
+				<button class="add_panier"">Ajouter au panier</button>
 		</div>
-
-		<div class="article2 grid--3">
-			<h2>Bonnet</h2>
-			<p>Il y a plusieurs tailles :</span></p>
+		
+		<div produit=" Bonnet" prix="5" class="article2 grid--3 produit" taille="M">
+					<h2></h2>
+					<br>
+					<img class="images" src="./image/bonnet.webp" alt="Tee-Shirt">
+					<p>Il y a plusieurs tailles :</p>
+					<br>
+					<div class="selector">
+						<button role="button" class="S selectbutton" value="S">S</button>
+						<button role="button" class="M selectbutton active" value="M">M</button>
+						<button role="button" class="L selectbutton" value="L">L</button>
+					</div>
+					<input type="number" id="nombre" name="nombre" min="0" max="99" value="1">
+					<button class="add_panier"">Ajouter au panier</button>
 		</div>
 
 	</article>
+	<script>
+		boutique_loaded();
+	</script>
 </section>

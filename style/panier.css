@@ -1,0 +1,17 @@
+.panier-page .all-white {
+	padding: 20px;
+	background-color: #fff;
+	border: none;
+	color: #000;
+	text-align: justify;
+}
+
+.panier-page .all-white h3 {
+	text-align: center;
+}
+
+.fake-link {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
